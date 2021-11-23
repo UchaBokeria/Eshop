@@ -1,0 +1,341 @@
+@import "../../Assets/Style/linkin";
+@import '../../Assets/Style/components/components.scss';
+////////////////////////////////// slider
+#homeCarousel {
+    width: 100%;
+    position: relative !important;
+    height: 60.18vh !important;
+    .childCell {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .lefty,
+    .righty {
+        &:before {
+            color: $white;
+        }
+    }
+}
+//////////////////////////// detail
+.details_container{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 90px
+
+
+}
+.description{
+    width: 50%;
+        .Dtitle{
+            @include Roboto(600, 28px);
+            margin-left: 50px;
+            width: 160px;
+            letter-spacing: 2px;
+
+            
+
+
+        }
+    .Pdesc{
+        @include Roboto(300, 20px);
+        width: 500px;
+        font-style: italic;
+
+    }    
+}
+.stars{
+    color: red;
+    @include Roboto(300, 15px);
+    width: 32x;
+    height: 20px;
+    position: absolute;
+    right: 230px;
+    
+
+}
+        .price-allStatements {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            height: 40px;
+            width: 90px;
+            margin-left: 30px;
+            margin-top: 5px;
+            p {
+                @include Roboto(300, 17px);
+                font-style: italic;
+                text-decoration: underline;
+                color: $black;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+      }
+    
+.product_information{
+        width: 40%;
+     
+        .first_line{
+            display: flex;
+            margin-top: 25px;
+            height: 45px;
+            position: relative;
+            margin-left: 50px;
+
+
+            .cost{
+                @include Roboto(300, 17px);
+                width: 60px;
+                font-style: italic;
+                height: 15px;
+                margin-top: 17px;
+                margin-left: 20px;
+            }
+            .image{
+
+                margin-top: 15px;
+                margin-left: 100px;
+
+            }
+        }
+            .second_line{
+                display: flex;
+                height: 20px;
+                margin-left: 45px;
+                margin-top: 10px;
+            
+                .icon-phone{
+                    fill: black !important;
+                    margin-left: 105px;
+                    font-weight: 300;
+                    font-size: 17px;
+                }
+                .number{
+                    margin-left: 20px;
+                    @include Roboto(300, 17);
+
+                }
+            }
+            .third_line{
+                height: 20px;
+                margin-left: 105px;
+                margin-top: 20px;
+                width: 300px;
+                display: flex;
+                .Mail{
+                    margin-left: 50px;
+                    @include Roboto(300, 17px);
+                }
+            }
+            .fourth_line{
+                height: 20px;
+                margin-left: 120px;
+                margin-top: 20px;
+                display: flex;
+                width: 300px;
+
+
+                p,i{
+                    @include Roboto(300, 17);
+                    margin-top: 2px;
+
+                }
+            }
+            .Tbilisi{
+                margin-left: 20px;
+            }
+            .Georgia{
+                margin-left: 10px;
+            }
+            i{
+                margin-left: 30px;
+            }
+    }  
+    .more_description{
+        width: 80%;
+            margin-left: 120px;
+            margin-top: 150px;
+        .container{
+            width: 55%;
+            position: relative;
+        
+        .first_line{
+            display: flex;
+            .icon-heating,.heating{
+                @include Roboto(300, 20px);
+            }
+            .heating,.area,.icon-area{
+                margin-left: 15px;
+                margin-top: 1px;
+                @include Roboto(300, 20px);
+            }
+            .icon-heating{
+                margin-left: 10px;
+            }
+            .icon-parking,.parking,.icon-area,.area{
+                @include Roboto(300, 20px);
+            }
+            .icon-parking,.icon-area{
+                margin-left: 40px;
+            }
+            .parking,.area{
+                margin-left: 15px;
+            }
+        }
+        .second_line{
+            display: flex;
+            margin-top: 30px;
+            .icon-conditioner,.conditioner{
+                @include Roboto(300, 20px);
+                margin-left: 15px;
+            }
+            .icon-pool{
+                @include Roboto(300, 20px);
+                margin-left: 40px;
+            }
+            .pool,.bed{
+                margin-left: 15px;
+                @include Roboto(300, 20px);
+            }
+            .icon-bed{
+                @include Roboto(300, 20px);
+                margin-left: 70px;
+            }
+
+        }
+        .third_line{
+            display: flex;
+            margin-top: 30px;
+                .icon-gas{
+                    @include Roboto(300, 20px);
+                    margin-left: 15px;
+
+              } 
+              .gas,.wifi,.door{
+                @include Roboto(300, 20px);
+
+                  margin-left: 15px;
+              }
+              .icon-wifi,.icon-door{
+                @include Roboto(300, 20px);
+                margin-left: 65px;
+                margin-bottom: 40px;
+              }
+
+        }
+        .show{
+            color: #656565;
+            @include Roboto(300, 16px);
+            position: absolute;
+            bottom: 5px;
+            right: 100px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+.comment_container{
+    width: 80%;
+    margin-left: 100px;
+    .title{
+        @include Roboto(300, 28px);
+        width: 140px;
+        margin-left: 20px;
+    }
+    .write_comment{
+        height: 40px;
+        width: 70%;
+        background-color: #dddada;
+        border-radius: 5px;
+        margin-left: 40px;
+        margin-top: 50px;
+        &::placeholder{
+            color:#8F8F8F;
+            @include Roboto(300, 16px);
+            padding-left: 30px;
+
+        }
+    }
+
+    .product_comment{
+        width: 70%;
+        height: 60px;
+        background-color: #dddada;
+        border-radius: 5px;
+        margin-left: 40px;
+        margin-top: 15px;
+        display: flex;
+        position: relative;
+       .com_image{
+           position: absolute;
+           top: 50%;
+           left: 30px;
+       }
+    }
+    .comment{
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        @include Roboto(300, 16px);
+
+    }
+}
+
+.home-statement {
+    padding: 0 40px;
+    width: 100%;
+    margin-top: 10vh;
+    &:first-child {
+        margin-top: 0 !important;
+    }
+    &:last-child {
+        margin-bottom: 10vh;
+    }
+    .title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        h1 {
+            @include Roboto(400, 25px);
+            text-transform: uppercase;
+            color: $black;
+        }
+        .price-allStatements {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            p {
+                @include Roboto(300, 17px);
+                font-style: italic;
+                text-decoration: underline;
+                color: $black;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+      #SuperVipHomeStatementSlider {
+        height: 40vh !important;
+        position: relative !important;
+        .slider-Container {
+            background-color: transparent;
+            .slider-cell {
+                background-color: transparent;
+                .statement-properties {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+    

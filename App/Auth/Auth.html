@@ -19,27 +19,40 @@
   <!-- Register -->
   <div class="register-container">
     <form class="input-form">
-      <!-- Name & Email Inputs -->
+      <!-- Firstname & Lastname -->
       <div class="inputs-wrapper">
         <div class="input-container">
-          <label>Fullname</label>
-          <input type="text" placeholder="Enter your Fullname" />
+          <label>Firstname</label>
+          <input type="text" placeholder="Enter your Firstname" />
         </div>
+        <div class="input-container">
+          <label>Lastname</label>
+          <input type="text" placeholder="Enter your Lastname" />
+        </div>
+      </div>
+      <!-- Email&Username -->
+      <div class="inputs-wrapper">
         <div class="input-container">
           <label>Email</label>
           <input type="email" placeholder="Enter your Email" />
         </div>
+        <div class="input-container">
+          <label>Username</label>
+          <input type="text" placeholder="Enter Your Username" />
+        </div>
       </div>
-      <!-- Password -->
+      <!-------Password------->
       <div class="inputs-wrapper">
         <div class="input-container">
           <label>Password</label>
-          <input type="password" placeholder="Enter your Password" />
+          <input type="password" placeholder="Enter your password" />
         </div>
+
         <div class="input-container">
           <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm your Password" />
+          <input type="password" placeholder="Confirm Your Password">
         </div>
+        
       </div>
       <!-- Birthday & Gender -->
       <div class="inputs-wrapper">
@@ -48,8 +61,7 @@
           <input type="text" placeholder="Enter your Birthday" />
         </div>
         <div class="input-container">
-          <label>Gender</label>
-          <!-- <input type="text" placeholder="Enter your Username" /> -->
+          <label>Gender</label>       
           <select name="Gender" id="genders">
             <option value="clear">Choose your Gender</option>
             <option value="notSpecified">Not specified</option>
@@ -59,28 +71,40 @@
           </select>
         </div>
       </div>
-      <!-- Country & City -->
+      <!-- Country&city -->
       <div class="inputs-wrapper">
         <div class="input-container">
           <label>Country</label>
-          <input type="text" placeholder="Enter your Country" />
+          <input type="text" placeholder="Country" />
         </div>
         <div class="input-container">
           <label>City</label>
-          <input type="text" placeholder="Enter your City" />
-        </div>
+          <input type="text" placeholder="City">
+        </div>      
       </div>
-      <!-- Phone & Submit -->
+
       <div class="inputs-wrapper">
-        <div class="input-container">
-          <label>Phone</label>
-          <input type="tel" placeholder="Enter your Phone" />
-        </div>
-        <button class="btn" Vtext="SIGN_UP"></button>
+            <div class="input-container">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter Your Phone Number">
+             </div>
+            
+             <div class="code_confirm">
+              <input type="tell" placeholder="ENTER CODE" id="Icode">
+            </div>
+            <button class="btn" Vtext="SEND_CODE"></button>
+
       </div>
-      <p class="auth-question auth-q-login" Vtext="ALREADY_HAVE_ACC"></p>
+      <div class="inputs-wrapper">
+        <p class="auth-question auth-q-login" Vtext="ALREADY_HAVE_ACC"></p>
+
+        <button class="btn" Vtext="SIGN_UP"></button>
+          </div>
+      
+
     </form>
   </div>
+
 
   <!-- Password Reset-1 -->
   <div class="password-reset-container">
