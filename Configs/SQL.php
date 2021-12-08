@@ -1,8 +1,8 @@
 <?php 
     // Database configuration
-    define("DBHOST",     "localhost");
+    define("DBHOST",     "45.84.205.106");
     define("DBPORT",     "3306");
     define("DBCHARSET",  "utf8mb4");
-    define("DBUSERNAME", "root");
-    define("DBPASSWORD", "");
-    define("DBNAME",     "eshop");
+    define("DBUSERNAME", "u995894309_root");
+    define("DBPASSWORD", "Ferrari12");
+    define("DBNAME",     "u995894309_web");
