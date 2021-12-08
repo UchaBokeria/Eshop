@@ -101,6 +101,7 @@ class DropDown extends System {
     
     buildTrigger = async () => {
         document.querySelector(this.options.trigger).addEventListener("click", (e) => {
+            document.querySelector(this.options.area + "Selected").classList.toggle("hide");
             document.querySelector(this.options.area + "Options").classList.toggle("hide");
         });
     }

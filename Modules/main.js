@@ -14,4 +14,6 @@ system.serve( async ()=> {
 
     const CallRouter = new Router();
     await CallRouter.route("Main", null, false);
+    
+    $("[route-me='" + CallRouter.DefaultRoute + "']").trigger("click");
 });

@@ -897,7 +897,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 28px;
-  margin-left: 50px;
+  margin-bottom: 25px;
   width: 160px;
   letter-spacing: 2px;
 }
@@ -1053,7 +1053,7 @@
 .more_description {
   width: 80%;
   margin-left: 120px;
-  margin-top: 150px;
+  margin-top: 10vh;
 }
 
 .more_description .container {
@@ -1197,6 +1197,7 @@
   border-radius: 5px;
   margin-left: 40px;
   margin-top: 50px;
+  padding-left: 3%;
 }
 
 .comment_container .write_comment::-webkit-input-placeholder {
@@ -1204,7 +1205,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding-left: 30px;
 }
 
 .comment_container .write_comment:-ms-input-placeholder {
@@ -1212,7 +1212,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding-left: 30px;
 }
 
 .comment_container .write_comment::-ms-input-placeholder {
@@ -1220,7 +1219,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding-left: 30px;
 }
 
 .comment_container .write_comment::placeholder {
@@ -1228,7 +1226,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding-left: 30px;
 }
 
 .comment_container .product_comment {

@@ -66,12 +66,19 @@ class System {
     }
     
     getResponse = async (data, URL = "response.php") => {
+        $.ajaxSetup({ cache: false });
         var request = $.ajax({
             type: "POST",
             url: URL,
             data: data,
             dataType: "json",
-            success:  (response)=> request = response,
+            cache: false,
+            headers: {
+                'Cache-Control': 'no-cache, no-store, must-revalidate', 
+                'Pragma': 'no-cache', 
+                'Expires': '0'
+            },
+        success:  (response)=> request = response,
             error: function (response) {
                 console.log(response);
             }

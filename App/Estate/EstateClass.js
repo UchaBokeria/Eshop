@@ -44,3 +44,37 @@ $('.toggle-btn-value').click(function() {
   }
 
 })
+
+
+var newAutomatory = async ()=> {
+  var automator = new Automator({
+    data: {
+        route: "Automator",
+        act: "build",
+    },
+    area: "#Automator",
+    class: ["container"],
+    options: {
+        chosen: { name: "aa" },
+        attributes: ["id", "name"],
+        class: ["optionies", "red"],
+    }
+  });
+  return null;
+}
+
+var translatee = async ()=> {
+  var langID = localStorage.getItem("lang");
+
+  Translate.init({
+      route: "Languager",
+      act: "getTranslation",
+      page_id: 5,
+      lang_id: langID,
+  });
+}
+
+system.serve(async (e)=>{
+  await newAutomatory();
+  await translatee();
+});

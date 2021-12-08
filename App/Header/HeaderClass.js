@@ -14,7 +14,6 @@ var toggleNavbar = ()=> {
 
 $(burger).click(toggleNavbar);
 $("#close_navbar").click(toggleNavbar);
-$("[route-me]").click(toggleNavbar);
 
 
 var LanguageDropDown = new DropDown({

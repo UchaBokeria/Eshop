@@ -4,6 +4,9 @@ class Router extends System {
         this.Routes  = null;
         this.Welcome = null;
         this.DefaultRoute = "Home";
+        var lastRoute = localStorage.getItem("lastRoute");
+        if(lastRoute != "" && lastRoute != null && lastRoute != undefined)
+            this.DefaultRoute = lastRoute;
         this.StartPoint = "[start]";
         this.getRoutes();
     }
@@ -68,11 +71,13 @@ class Router extends System {
         closedNodes.forEach( async el => {
             el.onclick = async(each) => {
                 var routery = each.target.getAttribute("route-me");
+                localStorage.setItem("lastRoute", routery);
                 if (routery != "")
                     await this.route(routery, "[open='INROOT']");
             };
         });
         
+        document.querySelector("[open='INROOT']").innerHTML = "";
         $("[route-me='" + this.DefaultRoute + "']").trigger("click");
     }
 

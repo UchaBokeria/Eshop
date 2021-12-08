@@ -32,7 +32,7 @@
     width: 50%;
         .Dtitle{
             @include Roboto(600, 28px);
-            margin-left: 50px;
+            margin-bottom: 25px;
             width: 160px;
             letter-spacing: 2px;
 
@@ -159,7 +159,7 @@
     .more_description{
         width: 80%;
             margin-left: 120px;
-            margin-top: 150px;
+            margin-top: 10vh;
         .container{
             width: 55%;
             position: relative;
@@ -256,10 +256,10 @@
         border-radius: 5px;
         margin-left: 40px;
         margin-top: 50px;
+        padding-left: 3%;
         &::placeholder{
             color:#8F8F8F;
             @include Roboto(300, 16px);
-            padding-left: 30px;
 
         }
     }

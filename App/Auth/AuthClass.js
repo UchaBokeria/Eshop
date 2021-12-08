@@ -14,6 +14,7 @@ $(function () {
 
   $(registerQuestion).click(function () {
     $(loginContainer).addClass("hide");
+    $(".auth-container").css("height","104vh")
     $(loginContainer).removeClass("show");
     $(registerContainer).addClass("show");
     $(registerContainer).removeClass("hide");
@@ -22,6 +23,7 @@ $(function () {
 
   $(loginQuestion).click(function () {
     $(loginContainer).addClass("show");
+    $(".auth-container").css("height","")
     $(loginContainer).removeClass("hide");
     $(registerContainer).addClass("hide");
     $(registerContainer).removeClass("show");

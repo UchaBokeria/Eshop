@@ -17,7 +17,7 @@ class Automator extends System {
             data: {
                 route: "Automator",
                 act: "build",
-                url: "../../response.php"
+                url: "response.php"
             },
             area: "#Automator",
             classes: ["container"],
@@ -34,6 +34,7 @@ class Automator extends System {
     init = async () => {
         this.parent          = document.querySelector(this.options.area);
         console.log(this.parent)
+        document.querySelector(this.options.area).innerHTML = "";
         this.selectedItem    = null;
         this.chosenValue     = null;
         this.selections      = null;
@@ -45,16 +46,10 @@ class Automator extends System {
     }
     
     build = async () => {
+        document.querySelector(this.options.area).innerHTML = "";
         this.data = await this.getResponse(this.options.data, this.options.data.url);
-        
-        console.log("ALLDATA");
-        console.log(this.data)
 
-        console.log("PARENTS");
         this.parentSections = this.data.filter((obj) => { return (obj.parent == 0) });
-        console.log(this.parentSections)
-
-        
         
         this.parentSections.forEach(async (each) => {
             // build parent
@@ -73,7 +68,7 @@ class Automator extends System {
 
             // build it's children
             var children = this.data.filter((obj) => { return (obj.parent == each.unique_id) })
-            console.log(children);
+           
             children.forEach( async (child) => {
                 var NewChildElement = await this.buildElement(child);
                 NewElement.appendChild(NewChildElement);
