@@ -49,6 +49,7 @@ class Automator extends System {
         document.querySelector(this.options.area).innerHTML = "";
         this.data = await this.getResponse(this.options.data, this.options.data.url);
 
+        
         this.parentSections = this.data.filter((obj) => { return (obj.parent == 0) });
         
         this.parentSections.forEach(async (each) => {
